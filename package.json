@@ -46,5 +46,8 @@
   },
   "peerDependencies": {
     "webpack": ">=3.6.0 || >= 4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
