@@ -7,14 +7,23 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "git add"],
-    "*.json": ["prettier --parser json --write", "git add"]
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --parser json --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/icopp/react-app-rewire-define-plugin.git"
   },
-  "keywords": ["webpack", "react-app-rewired"],
+  "keywords": [
+    "webpack",
+    "react-app-rewired"
+  ],
   "author": "Ian Copp <ian@wolflair.com>",
   "license": "MIT",
   "bugs": {
@@ -32,9 +41,10 @@
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
     "lint-staged": "^4.2.1",
-    "prettier": "^1.7.0"
+    "prettier": "^1.7.0",
+    "webpack": "^4.28.3"
   },
-  "dependencies": {
-    "webpack": "^3.6.0"
+  "peerDependencies": {
+    "webpack": ">=3.6.0 || >= 4.0.0"
   }
 }
